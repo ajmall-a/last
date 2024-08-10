@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const cors = require('cors');
 
 const app = express();
-const port = process.env.PORT || 5000;
+const port = process.env.PORT || 3000;
 
 // Middleware
 app.use(cors());
@@ -11,7 +11,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // MongoDB Connection
-mongoose.connect('mongodb+srv://arun3757979:life@cluster0.yxsd0j4.mongodb.net/todoDB?retryWrites=true&w=majority&appName=Cluster0', {
+mongoose.connect('mongodb+srv://ajmala:Ajmalaju@cluster0.sedg3bs.mongodb.net/ToDB?retryWrites=true&w=majority&appName=Cluster0', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 });
